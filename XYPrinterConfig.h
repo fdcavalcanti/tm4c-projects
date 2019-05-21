@@ -72,7 +72,7 @@ void GPIOMesaConfig(){
 
     //Eixo Y
     //PWM 0
-    //Controle direção PF1
+    //Controle direÃ§Ã£o PF1
     SYSCTL_RCGCGPIO_R  |= 1<<5;
 
     GPIO_PORTF_AHB_DIR_R |= 1<<1;
