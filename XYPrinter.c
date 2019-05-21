@@ -1,11 +1,11 @@
-//Filipe do Ó Cavalcanti | Maio 2019
+//Filipe do Ã“ Cavalcanti | Maio 2019
 //contXrole da mesa com motor de passo
 //Driver X; Conectam-se aos pinos PE0 PE1 PE2 PE3
 //Driver Y; PWM0 PF2 | PF1 troca sentido | PF3 Enable
-//Sequência de start up coloca a mesa toda para um lado até que
-//o usuário ordene a parada, via UART, comando P
-//Frequência para o motor de passo X: 75 Hz 3300 passos
-//Frequência para o motor de passo Y: 300 Hz 420 passos
+//SequÃªncia de start up coloca a mesa toda para um lado atÃ© que
+//o usuÃ¡rio ordene a parada, via UART, comando P
+//FrequÃªncia para o motor de passo X: 75 Hz 3300 passos
+//FrequÃªncia para o motor de passo Y: 300 Hz 420 passos
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -32,7 +32,7 @@ void moveY(int dirY);
 void PWM0Config();
 unsigned concatenate(unsigned x, unsigned y);
 
-//---------- Interrupções
+//---------- InterrupÃ§Ãµes
 void Timer0IntHandler(void){
     TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
     moveX(dirX);
